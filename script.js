@@ -29,3 +29,4 @@ submit.addEventListener("click", (e)=>{
 	myfunc(cityname.value)
 })
 myfunc("Delhi")
+
