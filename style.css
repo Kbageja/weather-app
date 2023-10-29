@@ -1,6 +1,10 @@
 body{
-    background-color: rgb(7, 7, 7);
+    background-image:url(https://images.unsplash.com/photo-1567688993206-43c34131b21f?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmFpbnl8ZW58MHx8MHx8fDA%3D);
     font-family: 'Rubik',sans-serif;
+    color: white;
+    
+  
+    
 }
 .main{
     display:flex ;
@@ -10,8 +14,8 @@ body{
     flex-direction: column;
 }
 .card{
-    width:26vw;
-    height: 60vh;
+    width:28vw;
+    height: 65vh;
     box-sizing: border-box;
     border: 1px solid white;
     background-color: transparent;
@@ -33,7 +37,11 @@ body{
 }
 .undermain{
     display: flex;
-    gap: 20px;
+    
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+    margin-top: 6%;
 
 }
 #cityname{
@@ -79,4 +87,82 @@ body{
     
 
 }
+.element{
+    display: flex;
 
+}
+#city_name{
+    font-size: 130px;
+
+}
+i{
+    padding-top: 30px;
+    padding-left: 150px;
+    font-size: 400%;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+   padding: 10px 10px;
+   margin-top: 30px;
+    gap: 20px;
+  
+}
+.box1{
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(158, 157, 157, 0.575);
+    width: 150px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+  
+    align-items: center;
+}
+.box2{
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(158, 157, 157, 0.541);
+    width: 150px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+  
+    align-items: center;
+}
+.box3{
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(158, 157, 157, 0.541);
+    width: 150px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+  
+    align-items: center;
+}
+.box4{
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(158, 157, 157, 0.678);
+    width: 150px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+  
+    align-items: center;
+}
+#temp{
+    font-size: 70px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+}

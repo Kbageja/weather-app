@@ -1,5 +1,5 @@
 const  cloud_pct = document.getElementById("cloud_pct");
-const url = "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=london";
+const url = "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=";
 const options = {
   method: "GET",
   headers: {
@@ -8,18 +8,24 @@ const options = {
   },
 };
 
+const myfunc  = (city) =>{ 
 
-   fetch(url, options).then( response  => response.json()).then((response)=>{
+	city_name.innerHTML =  city
+
+   fetch(url+ city, options).then( response  => response.json()).then((response)=>{
   console.log(response);
-  cloud_pct.innerHtml = response.cloud_pct
-  temp.innerHtml = response.temp
-  feels_like.innerHtml = response.feels_like
-  humidity.innerHtml = response.humidity
-  min_temp.innerHtml = response.min_temp
-  max_temp.innerHtml = response.max_temp
-  wind_speed.innerHtml = response.wind_speed
-  wind_degrees.innerHtml = response.wind_degrees
-  sunrise.innerHtml = response.sunrise
-  sunset.innerHtml = response.sunset
+ 
+  temp.innerHTML = response.temp
+  
+  humidity.innerHTML = response.humidity
+  
+  wind_speed.innerHTML = response.wind_speed
+  
+  sunrise.innerHTML = response.sunrise
+  sunset.innerHTML = response.sunset
 }).catch(err => console.error(err));
-
+}
+submit.addEventListener("click", (e)=>{
+	myfunc(cityname.value)
+})
+myfunc("Delhi")
